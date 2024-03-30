@@ -62,3 +62,16 @@
     from { right: -35px; }
     to { right: 100%; }
 }
+
+.jump-action {
+    animation-name: jump-action-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes jump-action-animation {
+    0% { bottom: -10px; }
+    45% { bottom: 50px; }
+    55% { bottom: 50px; }
+    100% { bottom: -10px; }
+}
