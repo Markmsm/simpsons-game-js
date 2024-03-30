@@ -11,3 +11,22 @@
     width: 220px;
     bottom: -10px;
 }
+
+.cloud-1 {
+    position: absolute;
+    top: -40px;
+    width: 200px;
+}
+
+.cloud-2 {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    width: 100px;
+}
+.cloud-3 {
+    position: absolute;
+    top: -20px;
+    left: 600px;
+    width: 150px;
+}
