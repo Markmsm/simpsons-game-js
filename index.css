@@ -3,6 +3,7 @@
     width: 99%;
     height: 500px;
     position: relative;
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .jumping-homer {
