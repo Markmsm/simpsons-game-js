@@ -4,12 +4,28 @@
     height: 500px;
     position: relative;
     background: linear-gradient(#87CEEB, #E0F6FF);
+    overflow: hidden;
 }
 
 .jumping-homer {
     position: absolute;
     width: 220px;
     bottom: -10px;
+}
+
+.clouds {
+    position: absolute;
+    width: 750px;
+    height: 120px;
+    animation-name: clouds-animation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clouds-animation {
+    from { right: -100%; }
+    to { right: 100%; }
 }
 
 .cloud-1 {
