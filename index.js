@@ -1,7 +1,8 @@
 const homer = document.querySelector('.jumping-homer')
+const hydrant = document.querySelector('.hydrant')
+const clouds = document.querySelector('.clouds')
 
 const verifyLoose = setInterval(() => {
-    const hydrant = document.querySelector('.hydrant')
     const hydrantPosition = hydrant.offsetLeft
     const homerAltitude = window
         .getComputedStyle(homer)
@@ -16,7 +17,6 @@ const verifyLoose = setInterval(() => {
         hydrant.style.left = `${hydrantPosition}px`
         homer.style.animation = 'none'
         homer.style.bottom = `${homerAltitude}px`
-        const clouds = document.querySelector('.clouds')
         const cloudsPosition = clouds.offsetLeft
         clouds.style.animation = 'none'
         clouds.style.left = `${cloudsPosition}px`
