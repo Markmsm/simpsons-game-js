@@ -25,12 +25,18 @@ const verifyLoose = setInterval(() => {
     }
 }, 100)
 
+let isJumping = false
+
 const jump = () => {
+    isJumping = true
     homer.classList.add('jump-action')
 
-    setTimeout(() => homer.classList.remove('jump-action'), 1500)
+    setTimeout(() => {
+        homer.classList.remove('jump-action')
+        isJumping = false
+    }, 1500)
 }
 
 document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowUp') { jump() }
+    if (event.key === 'ArrowUp' && !isJumping) jump()
 })
