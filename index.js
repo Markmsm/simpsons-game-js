@@ -40,3 +40,5 @@ const jump = () => {
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowUp' && !isJumping) jump()
 })
+
+console.log('testeeeeera')
